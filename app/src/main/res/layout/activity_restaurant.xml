@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Restaurant">
+
+    <ImageView
+        android:id="@+id/gambarHeader"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/txtbawahheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gambarHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Terpopuler Minggu Ini"
+        android:textColor="@color/hitam"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/detailBawahHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtbawahheader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="8 Outletm, Disimpan 15118 kali"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/detailBawahHeader2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/detailBawahHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Restoran terpopuler di kotamu minggu ini"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        />
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/detailBawahHeader2"
+        android:layout_marginTop="10dp"
+        android:numColumns="2"
+        >
+
+
+    </GridView>
+
+</android.support.constraint.ConstraintLayout>

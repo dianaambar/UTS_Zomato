@@ -3,10 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="15dp">
+    android:layout_margin="15dp"
+    android:id="@+id/MenuView"
+    >
 
     <ImageView
-        android:id="@+id/imgFood"
+        android:id="@+id/imageHeader"
         android:layout_margin="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -16,7 +18,7 @@
         />
     <TextView
         android:id="@+id/txtJudul"
-        app:layout_constraintStart_toEndOf="@id/imgFood"
+        app:layout_constraintStart_toEndOf="@id/imageHeader"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,7 +29,7 @@
 
     <TextView
         android:id="@+id/txtKeterangan"
-        app:layout_constraintStart_toEndOf="@id/imgFood"
+        app:layout_constraintStart_toEndOf="@id/imageHeader"
         app:layout_constraintTop_toBottomOf="@+id/txtJudul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,7 +40,7 @@
 
     <TextView
         android:id="@+id/txtDetail"
-        app:layout_constraintStart_toEndOf="@id/imgFood"
+        app:layout_constraintStart_toEndOf="@id/imageHeader"
         app:layout_constraintTop_toBottomOf="@+id/txtKeterangan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

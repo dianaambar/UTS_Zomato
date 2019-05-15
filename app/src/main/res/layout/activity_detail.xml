@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail">
+
+    <ImageView
+        android:id="@+id/imgFoodDetail"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/makanan"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/judulDetail"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Specialtys"
+        app:layout_constraintTop_toBottomOf="@id/imgFoodDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="24sp"
+        android:textColor="@color/hitam"
+        />
+    <TextView
+        android:id="@+id/jenis"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kafe - kafe, kue, roti"
+        app:layout_constraintTop_toBottomOf="@id/judulDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/lokasidetail"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="645 Ellis Street, Mountain View 94043"
+        app:layout_constraintTop_toBottomOf="@id/jenis"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/hitam"
+        />
+    <TextView
+        android:id="@+id/jamBuka"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Buka besok pada 5:30 AM"
+        app:layout_constraintTop_toBottomOf="@id/lokasidetail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/hitam"
+        />
+
+    <View
+        android:id="@+id/garis1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/jamBuka"
+        android:background="@color/hitam"
+        android:layout_margin="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/tengahGaris"
+        app:layout_constraintTop_toBottomOf="@id/garis1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:text="Directtion"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:text="Menus"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:text="Ulasan"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:text="Foto"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/garis2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/tengahGaris"
+        android:background="@color/hitam"
+        android:layout_margin="10dp"
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

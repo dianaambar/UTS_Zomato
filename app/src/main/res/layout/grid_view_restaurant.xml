@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_grid"
+    >
+    <ImageView
+        android:id="@+id/imgRestaurant"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/txtNamaRestaurant"
+        app:layout_constraintTop_toBottomOf="@id/imgRestaurant"
+        app:layout_constraintStart_toStartOf="@id/imgRestaurant"
+        android:text="SUSHI TOMI"
+        android:textColor="@color/hitam"
+        android:layout_marginTop="5dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtLokasiRestaurant"
+        app:layout_constraintTop_toBottomOf="@id/txtNamaRestaurant"
+        app:layout_constraintStart_toStartOf="@id/imgRestaurant"
+        android:text="SUSHI TOMI"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtHarga"
+        app:layout_constraintTop_toBottomOf="@id/txtLokasiRestaurant"
+        app:layout_constraintStart_toStartOf="@id/imgRestaurant"
+        android:text="SUSHI TOMI"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>
